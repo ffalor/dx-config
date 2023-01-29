@@ -81,4 +81,8 @@ alias create-issues='function _create-issues() {
 # Fix Vagrant for Windows support
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 
+# Molcule
 alias srcmolecule="source ~/.pyenv/molecule/bin/activate"
+
+# VSCODE
+alias code="code . -r"
