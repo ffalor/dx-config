@@ -8,6 +8,8 @@ if [[ `uname` == "Darwin" ]]; then
   source ~/.zshrc.d/falcon.zsh
 fi
 
+source ~/.zshrc.d/windows.zsh
+
 # Github & Git Aliases
 alias main="git checkout main"
 alias gch="git checkout"
