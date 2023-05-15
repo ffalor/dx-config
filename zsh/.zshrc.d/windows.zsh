@@ -1,4 +1,4 @@
 # Audio Aliases
 
-alias headphones-audio="powershell.exe Set-AudioDevice -Index 4"
-alias tv-audio="powershell.exe Set-AudioDevice -Index 9"
+alias audio-headphones="powershell.exe Set-AudioDevice -Index 5"
+alias audio-tv="powershell.exe Set-AudioDevice -Index 10"
