@@ -33,6 +33,3 @@ format =' [${ram}( | ${swap})]($style) '
 
 [time]
 disabled = true
-
-[git_branch ]
-always_show_remote = true
