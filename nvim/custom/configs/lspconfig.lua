@@ -27,8 +27,14 @@ lspconfig.gopls.setup {
       completeUnimported = true,
       usePlaceholders = true,
       analyses = {
-        unusedparams = true
-      }
+        unusedparams = true,
+      },
     },
   },
+}
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "python" },
 }

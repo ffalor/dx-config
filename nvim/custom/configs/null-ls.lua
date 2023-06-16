@@ -9,15 +9,8 @@ local b = null_ls.builtins
 
 local sources = {
 
-  -- webdev stuff
-  b.formatting.deno_fmt, -- choosed deno for ts/js files cuz its very fast!
-  b.formatting.prettier.with { filetypes = { "html", "markdown", "css" } }, -- so prettier works only on these filetypes
-
   -- Lua
   b.formatting.stylua,
-
-  -- cpp
-  b.formatting.clang_format,
 
   -- go
   b.formatting.gofmt.with {
@@ -31,22 +24,27 @@ local sources = {
   b.formatting.golines.with {
     filetypes = { "go", "gomod", "gowork", "gotmpl" },
   },
+
+  -- python
+  b.diagnostics.mypy,
+  b.diagnostics.ruff,
+  b.formatting.black,
 }
 
 null_ls.setup {
   debug = true,
   sources = sources,
-  on_attach = function (client, bufnr)
-    if client.supports_method("textDocument/formatting") then
-      vim.api.nvim_clear_autocmds({
+  on_attach = function(client, bufnr)
+    if client.supports_method "textDocument/formatting" then
+      vim.api.nvim_clear_autocmds {
         group = augroup,
         buffer = bufnr,
-      })
+      }
       vim.api.nvim_create_autocmd("BufWritePre", {
         group = augroup,
         buffer = bufnr,
         callback = function()
-          vim.lsp.buf.format({buffer = bufnr})
+          vim.lsp.buf.format { buffer = bufnr }
         end,
       })
     end

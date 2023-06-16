@@ -4,12 +4,6 @@ M.treesitter = {
   ensure_installed = {
     "vim",
     "lua",
-    "html",
-    "css",
-    "javascript",
-    "typescript",
-    "tsx",
-    "c",
     "markdown",
     "markdown_inline",
   },
@@ -27,11 +21,14 @@ M.mason = {
     "lua-language-server",
     "stylua",
 
-    -- web dev stuff
-    "prettier",
-
     -- go stuff
     "gopls",
+
+    -- python stuff
+    "pyright",
+    "mypy",
+    "ruff",
+    "black",
   },
 }
 
