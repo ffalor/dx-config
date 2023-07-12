@@ -21,6 +21,10 @@ M.general = {
   },
 }
 
--- more keybinds!
+M.telescope = {
+ n = {
+    ["<leader>fg"] = { "<cmd> Telescope git_files <CR>", "Find project files" },
+  }
+}
 
 return M
