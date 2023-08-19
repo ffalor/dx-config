@@ -48,7 +48,7 @@
   },
   // FILE TREE
   {
-    "command": "workbench.action.toggleSidebarVisibility",
+    "command": "workbench.action.toggleSidebarVisibility workbench.files.action.",
     "key": "ctrl+e"
   },
   {
