@@ -10,6 +10,7 @@ M.general = {
     ["n"] = { "nzzzv", "Next search term" },
     ["N"] = { "Nzzzv", "Previous search term" },
     ["<leader>rw"] = { ":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", "Replace a word everywhere" },
+    ["gh"] = {"<cmd>lua vim.lsp.buf.hover()<CR>", "Show LSP definition hover."}
   },
   v = {
     ["<leader>y"] = { '"+y', "Yank to system register" },
