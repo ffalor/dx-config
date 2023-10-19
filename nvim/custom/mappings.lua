@@ -35,7 +35,7 @@ M.telescope = {
 
 M.lazygit = {
     n = {
-        ["<leader>lg"] = {"<cmd> LazyGit <CR>", "Open lazygit"}
+        ["<leader>gg"] = {"<cmd> LazyGit <CR>", "Open lazygit"}
     }
 }
 
