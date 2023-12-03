@@ -4,8 +4,20 @@ M.treesitter = {
   ensure_installed = {
     "vim",
     "lua",
+    "c",
+    "go",
+    "gosum",
+    "gomod",
+    "gowork",
+    "vimdoc",
+    "query",
     "markdown",
     "markdown_inline",
+    "python",
+    "gitignore",
+  },
+  highlight = {
+    enable = true,
   },
   indent = {
     enable = true,
@@ -23,6 +35,10 @@ M.mason = {
 
     -- go stuff
     "gopls",
+    "delve",
+    "golangci-lint",
+    "goimports",
+    "golines",
 
     -- python stuff
     "pyright",

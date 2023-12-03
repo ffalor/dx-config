@@ -15,7 +15,13 @@ M.general = {
         ["<C-u"] = {"<C-u>zz", "Jump half page up and center"},
         ["n"] = {"nzzzv", "Next search term"},
         ["N"] = {"Nzzzv", "Previous search term"},
-        ["<leader>rw"] = {":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", "Replace a word everywhere"}
+        ["<leader>rw"] = {":%s/\\<<C-r><C-w>\\>/<C-r><C-w>/gI<Left><Left><Left>", "Replace a word everywhere"},
+        ["gh"] = {
+          function()
+            vim.lsp.buf.hover()
+          end,
+          "LSP hover",
+        },
     },
     v = {
         ["<leader>y"] = {'"+y', "Yank to system register"},
